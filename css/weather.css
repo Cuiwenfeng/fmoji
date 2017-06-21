@@ -1,0 +1,369 @@
+@charset "utf-8";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    outline: 0;
+    font-size: 1rem;
+    font-family: "Microsoft YaHei", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent
+}
+
+li, ul {
+    list-style-type: none
+}
+
+i {
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400
+}
+
+td, th {
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+a {
+    outline: 0;
+    color: #333;
+    text-decoration: none
+}
+
+em, i {
+    font-style: normal
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom
+}
+
+strong {
+    font-weight: 400
+}
+
+.clearfix:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    content: ""
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.warn_1 {
+    background-color: #8fc31f
+}
+
+.warn_2 {
+    background-color: #d7af0e
+}
+
+.warn_3 {
+    background-color: #f39800
+}
+
+.warn_4 {
+    background-color: #e2361a
+}
+
+.warn_5 {
+    background-color: #5f52a0
+}
+
+.warn_6 {
+    background-color: #631541
+}
+
+.index {
+    position: relative;
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1080px;
+    background: #0d5aa5;
+    color: #fff
+}
+
+.head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 15px 0;
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center
+}
+
+.info_box {
+    position: relative;
+    width: 100%;
+    min-height: 22rem;
+    background: -webkit-linear-gradient(top, #0c7ec4, #5f92c9)
+}
+
+.info_box::before {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    z-index: 0;
+    background: url(../img/building_night.png) center bottom no-repeat;
+    background-size: 100% auto;
+    content: ''
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.info_wea {
+    padding: 10rem 0 0 38px;
+    color: #fff;
+    font-size: 1.6rem
+}
+
+.info_about {
+    position: relative;
+    z-index: 1;
+    margin: 0 140px 0 0;
+    padding: 0 0 0 10px
+}
+
+.info_about em {
+    position: relative;
+    height: 9rem;
+    font-style: normal;
+    font-size: 7rem;
+    font-family: Arial;
+    line-height: 9rem
+}
+
+.info_about em::after {
+    position: absolute;
+    top: 1.3rem;
+    right: -1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    content: '°';
+    font-size: 3rem;
+    line-height: 1
+}
+
+.info_aqi {
+    position: absolute;
+    right: 10px;
+    bottom: 10px
+}
+
+.info_aqi li {
+    float: right;
+    clear: both;
+    height: 2.85rem;
+    padding: 5px;
+    margin: 1rem 0 0;
+    border-radius: 2.1rem;
+    background: rgba(0, 0, 0, .1)
+}
+
+.info_warn {
+    width: 2.2rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    border-radius: 1.1rem
+}
+
+.info_aqi li span {
+    float: left
+}
+
+.info_warn img {
+    width: 1.4rem;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.info_aqi li strong {
+    float: left;
+    height: 2.1rem;
+    padding: 0 17px 0 4px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.2rem
+}
+
+.days {
+    height: 6.2rem;
+    margin-top: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.days .single {
+    float: left;
+    width: 50%;
+    height: 6.15rem;
+    padding: 0 20px;
+    font-size: 1.2rem;
+}
+
+.days .single:first-child {
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.days .single div:first-child {
+    height: 2.6rem;
+    padding: .7rem 10px 0;
+    line-height: 1.6rem;
+}
+
+.days .single div:last-child {
+    height: 2.6rem;
+    padding: .6rem 10px 0;
+    line-height: 2rem;
+}
+
+.days .single em {
+    float: left;
+    font-style: normal;
+}
+
+.days .single span {
+    float: left;
+    width: 3rem;
+    height: 1.6rem;
+    margin: 0 0 0 10px;
+    text-align: center;
+    border-radius: .7rem;
+}
+
+.days .single b {
+    float: right;
+    font-weight: 400;
+}
+
+.days .single img {
+    float: right;
+    height: 1.5rem;
+}
+
+.weak_wea {
+    margin: 1.4rem 10px 1.4rem;
+    position: relative;
+}
+
+.weak_wea ul {
+    margin: 0 -10px;
+}
+
+.weak_wea li {
+    float: left;
+    width: 16.66%;
+    text-align: center;
+}
+
+.weak_wea em {
+    display: block;
+    height: 1.4rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: 1.4rem;
+}
+
+.weak_wea .wea {
+    padding: 0 0 4px;
+}
+
+.weak_wea li div {
+    min-height: 340px;
+}
+
+.weak_wea .wea dt {
+    height: 2.3rem;
+    line-height: 2.3rem;
+}
+
+.weak_wea .wea dt img {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.weak_wea .wea dd {
+    margin: 0 auto;
+    width: 3.7rem;
+    height: 3.3rem;
+    line-height: 3.3rem;
+}
+
+.weak_wea .wea dd strong {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+.weak_wea .aqi {
+    height: 1.6rem;
+    width: 3rem;
+    display: inline-block;
+    border-radius: .8rem;
+}
+
+.weak_wea .wind {
+    padding: 1.3rem 0 1rem;
+}
+
+.weak_wea .aqi, .weak_wea .wind dd {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #fff;
+}
+
+.weak_wea .aqi, .weak_wea .wind dd {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #fff;
+}
+
+.weak_wea .week_line {
+    position: absolute;
+    top: 7.2rem;
+    left: 0;
+    width: 100%;
+    padding: 12px 5%;
+}
+
+@media screen and (max-width: 800px) {
+    .weak_wea li div {
+        min-height: 220px;
+    }
+}

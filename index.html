@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>天气</title>
+    <link href="css/weather.css" rel="stylesheet" type="text/css">
+</head>
+<body class="index" oncontextmenu="return false">
+<input type="hidden" id="cityId" value="2">
+<!--head start-->
+<header class="head" id="city">
+    
+    
+    
+</header>
+<!--head end-->
+
+<!--info start-->
+<section class="info_box">
+    <div class="info">
+        <div class="info_wea" id="info_wea"></div>
+        <div class="info_about">
+            <em id="tempNow"></em>
+        </div>
+        <div class="info_aqi">
+            <ul>
+                <li>
+                    <span class="info_warn">
+
+                    </span>
+                    <strong></strong>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--info end-->
+
+<!--days start-->
+<section class="days">
+    <div class="single">
+        <div>
+            <em>今天</em>
+            <span id="q_today"></span>
+            <b><i id="tempLow_d"></i> / <i id="tempHigh_d"></i>°</b>
+        </div>
+        <div>
+            <strong id="weaToday"></strong>
+            <img class="t_w">
+        </div>
+    </div>
+    <div class="single">
+        <div>
+            <em>明天</em>
+            <span id="q_tomorr"></span>
+            <b><i id="tempLow_t"></i> / <i id="tempHigh_t"></i>°</b>
+        </div>
+        <div>
+            <strong id="weaTom"></strong>
+            <img class="tm_w">
+        </div>
+    </div>
+</section>
+<!--days end-->
+
+<!--weak - start-->
+<section class="weak_wea">
+    <canvas class="week_line" id="weekLine" width="1080" height="320"></canvas>
+    <ul class="clearfix"></ul>
+</section>
+<!--weak - end-->
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript" src="js/hourly.js"></script>
+<script type="text/javascript" src="js/days.js"></script>
+<script type="text/javascript" src="js/aqi.js"></script>
+</body>
+</html>
